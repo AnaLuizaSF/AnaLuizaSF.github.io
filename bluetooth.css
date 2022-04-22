@@ -1,0 +1,64 @@
+body {
+    background-color: #364E68;
+    min-height: 70vh;
+    min-width: 70vw;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Nunito', sans-serif;
+}
+.ft{
+    display: block;
+}
+.balao2{
+    margin: 0 auto; 
+    background: #EBF0F6;
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.85em;
+    line-height: 1.6em;  
+    border-radius: 50%;
+    width: 300px;
+    height: auto;
+    color: #364E68;
+    padding: 20px;
+    position: relative;
+    margin-top: 30px;
+}
+.balao2 p {
+    text-align: center;
+}
+.balao2:after{ /*Triangulo*/
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    /*Faz seta "apontar para baixo. Definir o valor como 'top' fará ela "apontar para cima" */
+    /*Aqui entra a cor da "aba" do balão */
+    border-bottom: 20px solid #EBF0F6;
+    top: -20px; /*localização. Experimente alterar para 'bottom'*/
+    left: 20%;
+    transform: rotate(345deg);
+}
+.btn {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top:680px;
+    width: 280px;
+    height:55px;
+    color: #ffffff;
+    border-radius: 15px;
+    font-size: 1.5rem;
+    background-color: #98CCD3;
+    margin-bottom: 15px;
+    border: none;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    transition: background 0.6s;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    }
